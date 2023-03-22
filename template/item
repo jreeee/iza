@@ -1,0 +1,5 @@
+name:           # produktbeschreibung
+preis_ges:      # in jpy
+preis:          # in jpy
+masse_ges:      # optional, default 1.5kg
+masse:          # optional, default 0.8kg
