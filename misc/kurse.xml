@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<kurse>
+<kurs id="246919">
+<land>Japan</land>
+<iso2>JP</iso2>
+<kurswert>140,29</kurswert>
+<iso3>JPY</iso3>
+<startdatum>01.01.2023</startdatum>
+<enddatum>31.01.2023</enddatum>
+</kurs>
+<kurs id="247178">
+<land>Japan</land>
+<iso2>JP</iso2>
+<kurswert>139,79</kurswert>
+<iso3>JPY</iso3>
+<startdatum>01.02.2023</startdatum>
+<enddatum>28.02.2023</enddatum>
+</kurs>
+<kurs id="247610">
+<land>Japan</land>
+<iso2>JP</iso2>
+<kurswert>143,05</kurswert>
+<iso3>JPY</iso3>
+<startdatum>01.03.2023</startdatum>
+<enddatum>31.03.2023</enddatum>
+</kurs>
+</kurse>

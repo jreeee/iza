@@ -33,7 +33,7 @@
 				<element id="E_VORPAPIERNUMMER">##/##/##</element>
 				<element id="VERTRETUNGSVERHAELTNIS">0</element>
 				<element id="E_VERSENDUNGSLAND">JP</element>
-				<element id="E_BESTIMMUNGSBUNDESLAND">16</element>
+				<element id="E_BESTIMMUNGSBUNDESLAND">##</element>
 				<element id="E_BM_ANKUNFT_KZ">unbekannt</element>
 				<element id="ART_DER_IDENTIFIKATION">REG</element>
 			</datarow>
