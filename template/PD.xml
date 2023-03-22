@@ -7,11 +7,13 @@
 			<datarow>
 				<element id="CODENUMMER">39264000000</element>
 				<element id="PACKSTUECKART">PK</element>
-				<element id="PACKSTUECKZAHL">1</element>
 				<element id="BEGUENSTIGUNG_BEANTRAGTE">310</element>
-				<element id="ROHMASSE">1.5</element>
-				<element id="EIGENMASSE">0.8</element>
-				<element id="ARTIKELPREIS">#</element>
+				<element id="ROHMASSE">#.#</element>
+				<element id="EIGENMASSE">#.#</element>
+				<element id="ARTIKELPREIS">##.##</element>
+				<element id="ZOLLWERT">##.##</element>
+				<element id="EUST_KOSTEN">##.##</element>
+				<element id="E_AHSTAT_WERT">##</element>
 				<element id="Verfahren">4000</element>
 				<element id="WARENBEZEICHNUNG_FIRMA">#</element>
 				<element id="URSPRUNGSLAND">JP</element>
@@ -19,13 +21,13 @@
 			</datarow>
 		</dataset>
 		<dataset id="Preis">
-			</datarow>
+			<datarow />
 		</dataset>
 		<dataset id="Gehalt">
 			<datarow />
 		</dataset>
 		<dataset id="VSt_Angabe">
-			</datarow>
+			<datarow />
 		</dataset>
 	</instance>
 </xml-data>

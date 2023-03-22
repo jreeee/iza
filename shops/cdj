@@ -1,6 +1,7 @@
 <element id="Beteiligtenart">2</element>
 <element id="Firmenbezeichnung">CDJapan (Neowing Corporation)</element>
 <element id="Strasse">1-10-15-3F Nihonbashi Horidome</element>
+<element id="Anschriftsortsteil">Chuo</element>
 <element id="Nationalitaet">JP</element>
 <element id="PLZ_Strasse">103-0012,</element>
-<element id="Anschriftsort">Chuo, Tokyo</element>
+<element id="Anschriftsort">Tokyo</element>
