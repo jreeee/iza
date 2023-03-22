@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-data xmlns="http://www.lucom.com/ffw/xml-data-1.0.xsd">
+	<form>catalog://IZA_KOPF/iza_einfuhr_kopfdaten</form>
+	<instance>
+		<datarow>
+			<element id="REGNR_BELEGART">I</element>
+			<element id="REGNR_DIENSTSTELLE">####</element>
+			<element id="vertreter_vorhanden">0</element>
+			<element id="aufschub_vorhanden">N</element>
+			<element id="erwerber_vorhanden">N</element>
+		</datarow>
+		<dataset id="Zollanmeldung">
+			<datarow>
+				<element id="Anmeldung">IM</element>
+				<element id="Anmeldeart">A</element>
+				<element id="Dienststelle">####</element>
+				<element id="Bezugsnummer">###</element>
+				<element id="Waehrung">JPY</element>
+				<element id="Betrag">#####</element>
+				<element id="Geschaeftsart">11</element>
+				<element id="Statistikstatus">04</element>
+				<element id="E_VORSTEUERABZUGSBERECHTI">N</element>
+				<element id="ANMELDER_IST_EMPFAENGER">J</element>
+				<element id="E_BESTIMMUNGS_EG_LAND">DE</element>
+				<element id="E_KENNZEICHEN_CONTAINER">N</element>
+				<element id="E_LIEFERBEDINGUNG">EXW</element>
+				<element id="E_LB_SCHLUESSEL">1</element>
+				<element id="E_LB_ORT">#</element>
+				<element id="E_BM_GRENZE_ART">07</element>
+				<element id="E_BM_GRENZE_STAAT">QU</element>
+				<element id="E_VERKEHRSZWEIG_GRENZE">5</element>
+				<element id="E_VORPAPIERART">PUEB</element>
+				<element id="E_VORPAPIERNUMMER">##/##/##</element>
+				<element id="VERTRETUNGSVERHAELTNIS">0</element>
+				<element id="E_VERSENDUNGSLAND">JP</element>
+				<element id="E_BESTIMMUNGSBUNDESLAND">16</element>
+				<element id="E_BM_ANKUNFT_KZ">unbekannt</element>
+				<element id="ART_DER_IDENTIFIKATION">REG</element>
+			</datarow>
+		</dataset>
+		<dataset id="Aufschubkonto">
+			<datarow />
+		</dataset>
+		<dataset id="Versender">
+			<datarow>
+				<element id="Beteiligtenart">2</element>
+				<element id="Firmenbezeichnung">#</element>
+				<element id="Strasse">#</element>
+				<element id="Nationalitaet">JP</element>
+				<element id="PLZ_Strasse">##</element>
+				<element id="Anschriftsort">#</element>
+			</datarow>
+		</dataset>
+		<dataset id="Empfaenger">
+			<datarow>
+				<element id="Beteiligtenart">3</element>
+				<element id="Vorsteuer">false</element>
+				<element id="Firmenbezeichnung">#</element>
+				<element id="Strasse">#</element>
+				<element id="Anschriftsortsteil">#</element>
+				<element id="Nationalitaet">DE</element>
+				<element id="A_ist_E">true</element>
+				<element id="PLZ_Strasse">#</element>
+				<element id="Anschriftsort">#</element>
+			</datarow>
+		</dataset>
+		<dataset id="Anmelder">
+			<datarow>
+				<element id="Beteiligtenart">A</element>
+				<element id="Firmenbezeichnung">#</element>
+				<element id="Strasse">#</element>
+				<element id="Anschriftsortsteil">#</element>
+				<element id="Nationalitaet">DE</element>
+				<element id="Anschriftsort">#</element>
+				<element id="PLZ_Strasse">#</element>
+			</datarow>
+		</dataset>
+		<dataset id="Vertreter">
+			<datarow />
+		</dataset>
+		<dataset id="Rechnung">
+			<datarow />
+		</dataset>
+		<dataset id="Erwerber">
+			<datarow />
+		</dataset>
+		<dataset id="Container">
+			<datarow />
+		</dataset>
+		<dataset id="SUMA_REG">
+			<datarow />
+		</dataset>
+		<dataset id="SUMA_ORD">
+			<datarow />
+		</dataset>
+	</instance>
+</xml-data>
+

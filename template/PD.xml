@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-data xmlns="http://www.lucom.com/ffw/xml-data-1.0.xsd">
+	<form>catalog://IZA_POS/iza_einfuhr_posdaten</form>
+	<instance>
+		<datarow />
+		<dataset id="Position">
+			<datarow>
+				<element id="CODENUMMER">39264000000</element>
+				<element id="PACKSTUECKART">PK</element>
+				<element id="PACKSTUECKZAHL">1</element>
+				<element id="BEGUENSTIGUNG_BEANTRAGTE">310</element>
+				<element id="ROHMASSE">1.5</element>
+				<element id="EIGENMASSE">0.8</element>
+				<element id="ARTIKELPREIS">#</element>
+				<element id="Verfahren">4000</element>
+				<element id="WARENBEZEICHNUNG_FIRMA">#</element>
+				<element id="URSPRUNGSLAND">JP</element>
+				<element id="PRAEF_URSPRUNGSLAND">JP</element>
+			</datarow>
+		</dataset>
+		<dataset id="Preis">
+			</datarow>
+		</dataset>
+		<dataset id="Gehalt">
+			<datarow />
+		</dataset>
+		<dataset id="VSt_Angabe">
+			</datarow>
+		</dataset>
+	</instance>
+</xml-data>
+
