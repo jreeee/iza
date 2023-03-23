@@ -1,8 +1,29 @@
 #! /bin/bash
 
+declare -a ADDRESS
+declare -a SHOPS
 BASEDIR="$HOME/git/iza"
 KURSE="$BASEDIR/misc/kurse.xml"
 jpy2eur_fallback="143.02" # put appropriate value here
+
+ReadAddr() {
+    # TODO
+    echo "$1"
+    if [ ! -e "$BASEDIR/generated/$1" ]; then
+        echo "generate xml from config"
+    fi
+    # append relevant parts to the files
+}
+
+CreateAddr() {
+    # TODO
+    cp "$BASEDIR/template/t-config.cfg" "$BASEDIR/private/config.tmp"
+    echo "copied the template to the private folder, please fill it out"
+}
+
+# same for the shops
+
+# similar for items
 
 # getting the conversion rate
 datecheck="$(grep "$(date +%m.%Y)" "$KURSE")"
@@ -16,9 +37,30 @@ if [ "$jpy2eur" == "" ]; then
 fi
 echo "using conversion rate of $jpy2eur jpy to 1 eur"
 
-# next steps:
-
-# list reciever-files to choose from
-# list shop-files to choose from
-# list items to choose from / create new in CLI
-# generate ad and pd files
+if [ -d "$BASEDIR/private" ]; then
+    ADDRESS=( "$(find "$BASEDIR/private" -type f -name "*.cfg")" )
+    len=${#ADDRESS[@]}
+    if [ "${ADDRESS[0]}" == "" ]; then
+        CreateAddr
+    elif [ "$len" == "1" ]; then
+        read -p "use ${ADDRESS[0]} or create a new entry [n]?" input
+        if [ "$input" == "n" ]; then
+            CreateAddr
+        else
+            ReadAddr "${ADDRESS[0]}"
+        fi
+    else
+        for (( i=0; i<"$len"; ++i )) do
+            echo "$i - ${ADDRESS[$i]}"
+        done
+        read -p "select a address using the corresponding number. to create a new one type 'n'" input
+        if [ "$input" -eq "$input" ] 2> /dev/null && [ "$input" -le "$len" ]; then
+            ReadAddr "${ADDRESS[$input]}"
+        elif [ "$input" == "n" ]; then
+            CreateAddr
+        else
+            echo "invalid input, aborting"
+            exit 1
+        fi
+    fi
+fi
