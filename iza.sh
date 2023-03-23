@@ -64,3 +64,5 @@ if [ -d "$BASEDIR/private" ]; then
         fi
     fi
 fi
+
+eval "$BASEDIR/mpx.sh" "$BASEDIR" "jre.cfg" "amiami.cfg" "asuka.cfg"

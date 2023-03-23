@@ -38,7 +38,7 @@
 				<element id="ART_DER_IDENTIFIKATION">REG</element>
 				<element id="Zahlungsart">A</element>
 				<element id="Ort">#</element>
-				<element id="Unterzeichner">#/element>
+				<element id="Unterzeichner">#</element>
 				<element id="Stellung">keine</element>
 				<element id="Telefonnummer">#</element>
 				<element id="EMail">#</element>
