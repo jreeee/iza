@@ -38,7 +38,7 @@ fi
 echo "using conversion rate of $jpy2eur jpy to 1 eur"
 
 if [ -d "$BASEDIR/private" ]; then
-    ADDRESS=( "$(find "$BASEDIR/private" -type f -name "*.cfg")" )
+    readarray -d '' ADDRESS < <(find "$BASEDIR/private" -type f -name "*.cfg" -print0)
     len=${#ADDRESS[@]}
     if [ "${ADDRESS[0]}" == "" ]; then
         CreateAddr
@@ -51,10 +51,10 @@ if [ -d "$BASEDIR/private" ]; then
         fi
     else
         for (( i=0; i<"$len"; ++i )) do
-            echo "$i - ${ADDRESS[$i]}"
+            echo "$i - ${ADDRESS[$i]:${#BASEDIR}+9}"
         done
-        read -p "select a address using the corresponding number. to create a new one type 'n'" input
-        if [ "$input" -eq "$input" ] 2> /dev/null && [ "$input" -le "$len" ]; then
+        read -p "select a address using the corresponding number. to create a new one type 'n': " input
+        if [ "$input" -eq "$input" ] 2> /dev/null && [ "$input" -lt "$len" ]; then
             ReadAddr "${ADDRESS[$input]}"
         elif [ "$input" == "n" ]; then
             CreateAddr
