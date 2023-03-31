@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# shellcheck disable=2162
+
 declare -a ADDRESS
 declare -a SHOPS
 BASEDIR="$HOME/git/iza"

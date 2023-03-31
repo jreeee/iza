@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# shellcheck disable=1001
+
 if [ $# -gt "1" ]; then
     year="$1"
     path="$2"
